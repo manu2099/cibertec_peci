@@ -72,11 +72,11 @@ public class JpaTest {
 	 * Segundo MODO
 	 * */
 	private void crearEmpleados2() {
-	Departamento departamento = new Departamento("JAVA");
+	Departamento departamento = new Departamento("PHP");
 	
 	//**List<Empleado> empleados = new ArrayList<Empleado>();
-	Empleado bob= new Empleado("Bob");
-	Empleado mike= new Empleado("Mike");
+	Empleado bob= new Empleado("Tor");
+	Empleado mike= new Empleado("Miky");
 	
 	//**empleados.add(bob);
 	//**empleados.add(mike);
@@ -96,7 +96,7 @@ public class JpaTest {
 		//Departamento dep = manager.createQuery("from Departamento where id=1", Departamento.class).getSingleResult();
 		// Segundo metodo tambien de JPA (clase, id)
 		Departamento dep= manager.find(Departamento.class, new Long (1));
-		dep.setNombre("ASP.NET");
+		dep.setNombre("PHITON");
 		manager.persist(dep);
 		//autorizar o para crear....
 	}
