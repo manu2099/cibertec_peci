@@ -24,7 +24,7 @@ public class JpaTest {
 	//practicamente modificar el persistence.xml
 	
 	public static void main(String[] args) {
-		EntityManagerFactory factory = Persistence.createEntityManagerFactory("persistenceUnit");
+		EntityManagerFactory factory = Persistence.createEntityManagerFactory("testEclipselink");
 		//
 		
 		EntityManager manager = factory.createEntityManager();
